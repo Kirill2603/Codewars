@@ -1,5 +1,5 @@
-function add(a, b){  
-	return a == b ? true : false
+function squareArea(A){
+  let Res = Number(((2 * A / 3.1416)**2).toFixed(2))
+  return Res
 }
-
-console.log(add('1', 1));
+console.log(squareArea(2));
