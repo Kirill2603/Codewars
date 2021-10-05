@@ -1,5 +1,9 @@
-function removeChar(str) {
-  return str.slice(1, str.length - 1);
-}
+var summation = function (num) {
+  let sum = 0;
+  for (let i = 0; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
+};
 
-console.log(removeChar("eloquent"));
+console.log(summation(8));
