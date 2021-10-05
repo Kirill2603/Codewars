@@ -1,5 +1,5 @@
-function litres(time) {
-  return Math.floor((time*0.5));
+function isDivisible(n, x, y) {
+  if (n%x==0 && n%y==0) return true
+  else return false
 }
-
-console.log(litres(1787));
+console.log(isDivisible(3,3,4));
