@@ -1,9 +1,14 @@
-function hello(name) {
-  if (name)
-    return `Hello, ${
-      name[0].toUpperCase() + name.slice(1, name.length).toLowerCase()
-    }!`;
-  else return "Hello, World!";
+function checkExam(array1, array2) {
+  let sum = 0;
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] === array2[i]) {
+      sum += 4;
+    } else if (array2[i] == "") {
+      sum = sum;
+    } else sum -= 1;
+  }
+  if (sum < 0) return 0;
+  else return sum;
 }
 
-console.log(hello("johN"));
+console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));
