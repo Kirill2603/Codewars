@@ -1,9 +1,9 @@
-function getMiddle(s) {
-  while (s.length > 2) {
-    s = s.slice(0, s.length - 1).slice(1);
-  }
-
-  return s;
+function hello(name) {
+  if (name)
+    return `Hello, ${
+      name[0].toUpperCase() + name.slice(1, name.length).toLowerCase()
+    }!`;
+  else return "Hello, World!";
 }
 
-console.log(getMiddle("test"));
+console.log(hello("johN"));
