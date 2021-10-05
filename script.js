@@ -1,8 +1,9 @@
-function highAndLow(numbers) {
-  let arr = numbers.split(" ");
-  let min = Math.min(...arr);
-  let max = Math.max(...arr);
-  return `${max} ${min}`;
+function getMiddle(s) {
+  while (s.length > 2) {
+    s = s.slice(0, s.length - 1).slice(1);
+  }
+
+  return s;
 }
 
-console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+console.log(getMiddle("test"));
