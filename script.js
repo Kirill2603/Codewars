@@ -1,5 +1,5 @@
-function numberToString(num) {
-  return `${num}`;
+function removeChar(str) {
+  return str.slice(1, str.length - 1);
 }
 
-console.log(boolToWord(false));
+console.log(removeChar("eloquent"));
