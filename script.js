@@ -1,9 +1,9 @@
-var summation = function (num) {
-  let sum = 0;
-  for (let i = 0; i <= num; i++) {
-    sum += i;
+function repeatStr(n, str) {
+  var s = "";
+  for (var i = 0; i < n; i++) {
+    s += str;
   }
-  return sum;
-};
+  return s;
+}
 
-console.log(summation(8));
+console.log(repeatStr(3, "*"));
