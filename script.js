@@ -1,8 +1,22 @@
-function abbrevName(name) {
-  let abb = name.split(" ");
-  let Name = abb[0].slice(0, 1);
-  let SoName = abb[1].slice(0, 1);
-  return Name.toUpperCase() + "." + SoName.toUpperCase();
+var haystack_1 = [
+  "3",
+  "123124234",
+  undefined,
+  "needle",
+  "world",
+  "hay",
+  2,
+  "3",
+  true,
+  false,
+];
+
+function findNeedle(haystack) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] == "needle") {
+      return `found the needle at position ${i}`;
+    }
+  }
 }
 
-console.log(abbrevName("Sam Harris"));
+console.log(findNeedle(haystack_1));
