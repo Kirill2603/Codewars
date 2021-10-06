@@ -1,5 +1,6 @@
-function maps(x) {
-  return x.map((x) => x * 2);
+function getAverage(marks) {
+  return Math.floor(
+    marks.map((i) => (x += i), (x = 0)).reverse()[0] / marks.length
+  );
 }
-
-console.log(maps([1, 2, 3]));
+console.log(getAverage([2, 2, 2, 2]));
