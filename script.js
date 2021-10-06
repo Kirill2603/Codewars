@@ -1,6 +1,4 @@
-function getAverage(marks) {
-  return Math.floor(
-    marks.map((i) => (x += i), (x = 0)).reverse()[0] / marks.length
-  );
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" ");
 }
-console.log(getAverage([2, 2, 2, 2]));
+console.log(reverseWords("hello world!"));
