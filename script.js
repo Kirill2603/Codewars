@@ -1,16 +1,10 @@
-function isDigit(s) {
-  if (Number(s)) return true
-  else return false
-  
+function generateRange(min, max, step){
+  let arr = []
+  for (let i = min;i<=max; i+=step){
+    arr.push(i)
+  }
+  return arr
 }
 
 
-console.log(isDigit("s2324"))
-
-
-// function isDigit(s) {
-//   if (Number(s) == parseFloat(s)){
-//   return true;
-//   }
-//   return false;
-//  }
+console.log(generateRange(2, 10, 2))
