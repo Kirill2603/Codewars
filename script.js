@@ -1,10 +1,10 @@
-function generateRange(min, max, step){
-  let arr = []
-  for (let i = min;i<=max; i+=step){
-    arr.push(i)
+function numberToPower(number, power){
+  pow = 1
+  for (let i=1;i<=power;i++){
+    pow *= number
   }
-  return arr
+  return pow
 }
 
 
-console.log(generateRange(2, 10, 2))
+console.log(numberToPower(10,4))
