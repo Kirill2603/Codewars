@@ -1,10 +1,3 @@
-function numberToPower(number, power){
-  pow = 1
-  for (let i=1;i<=power;i++){
-    pow *= number
+function toBinary(n){
+  return Number((n >>> 0).toString(2));
   }
-  return pow
-}
-
-
-console.log(numberToPower(10,4))
